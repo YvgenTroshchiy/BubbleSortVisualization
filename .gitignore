@@ -1,0 +1,41 @@
+# Max OS
+.DS_Store
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Android Studio
+.idea/
+.gradle
+/*/local.properties
+/*/out
+/*/*/build
+/*/build
+/build
+/*/*/production
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# built application files
+*.apk
+*.ap_
+
+# proguard
+dump.txt
+ajcore*
+
+# Log Files
+*.log

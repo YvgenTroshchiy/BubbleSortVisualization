@@ -1,0 +1,30 @@
+<resources>
+
+
+    <string name="app_name">BubbleSortVisualization</string>
+
+
+    <!-- Main activity -->
+    <!-- /////////////////////////////////////////// -->
+    <string name="array_length">Array length</string>
+    <string name="swap_duration">Swap duration in milliseconds</string>
+
+    <string name="one_step_swap_draw_description">One step swap drawing better seen in fast speed</string>
+    <string name="two_step_swap_draw_description">Two step swap drawing better seen in slow speed</string>
+
+    <string name="visualize_sorting">Visualize sorting</string>
+    <string name="visualize_sorting_with_default_value">Visualize sorting with default value</string>
+    <string name="one_step_swap_draw">One step swap draw</string>
+
+    <string name="error_length">Enter value between %1$d and %2$d</string>
+    <string name="error_enter_non_empty_value">Enter non-empty value</string>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+    <!-- BubbleSortVisualizationActivity -->
+    <!-- /////////////////////////////////////////// -->
+    <string name="restart">Restart</string>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+</resources>
