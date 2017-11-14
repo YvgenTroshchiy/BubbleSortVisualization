@@ -1,2 +1,2 @@
 # Bubble Sort Visualization
-![](images/sample.png)
+![](images/sample.gif)
