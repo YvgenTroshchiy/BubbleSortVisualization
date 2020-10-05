@@ -4,8 +4,12 @@ import java.util.Random;
 
 public class ArrayUtils {
 
-    /** Avoid creating an instance of this class */
-    private ArrayUtils() { throw new AssertionError(); }
+    /**
+     * Avoid creating an instance of this class
+     */
+    private ArrayUtils() {
+        throw new AssertionError();
+    }
 
     public static int[] generateUnsortedArray(int length, int maxValue) {
         int[] array = new int[length];

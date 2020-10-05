@@ -211,16 +211,16 @@ public class BubbleSortGraphWidget extends View {
     }
 
     //TODO: Rename or split
-    public void generateXandYratio() {
+    public void generateXAndYRatio() {
         columnWidth = getColumnWidth();
-        yRatio = getYratio();
+        yRatio = getYRatio();
     }
 
     private float getColumnWidth() {
         return (float) ((width - (MARGIN * 2)) / array.length);
     }
 
-    private float getYratio() {
+    private float getYRatio() {
         return (float) ((height - (MARGIN * 2)) / ArrayUtils.getArrayMaxValue(array));
     }
 

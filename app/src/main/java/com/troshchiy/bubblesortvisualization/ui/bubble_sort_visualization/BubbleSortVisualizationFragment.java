@@ -3,8 +3,6 @@ package com.troshchiy.bubblesortvisualization.ui.bubble_sort_visualization;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -13,6 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.troshchiy.bubblesortvisualization.R;
 import com.troshchiy.bubblesortvisualization.ui.bubble_sort_visualization.widget.BubbleSortGraphWidget;
@@ -30,8 +31,8 @@ public class BubbleSortVisualizationFragment extends Fragment {
 
     private final String TAG = BubbleSortVisualizationFragment.class.getSimpleName();
 
-    public static final String ARGS_ARRAY_LENGTH       = "args_array_length";
-    public static final String ARGS_SWAP_DURATION      = "args_swap_duration";
+    public static final String ARGS_ARRAY_LENGTH = "args_array_length";
+    public static final String ARGS_SWAP_DURATION = "args_swap_duration";
     public static final String ARGS_ONE_STEP_SWAP_DRAW = "args_one_step_swap_draw";
 
     private static final String ARGS_ARRAY = "args_array";
@@ -44,18 +45,18 @@ public class BubbleSortVisualizationFragment extends Fragment {
 
     private static int[] array;
 
-    private int     length;
-    private int     swapDuration;
+    private int length;
+    private int swapDuration;
     private boolean oneStepSwapDraw;
 
     private final Handler handler = new Handler(Looper.getMainLooper());
 
     class BubbleSortTask implements Runnable {
 
-        public static final String ARGS_I                         = "args_i";
-        public static final String ARGS_J                         = "args_j";
+        public static final String ARGS_I = "args_i";
+        public static final String ARGS_J = "args_j";
         public static final String ARGS_LAST_INDEX_FOR_INNER_LOOP = "args_last_index_for_inner_loop";
-        public static final String ARGS_IS_BIGGER                 = "args_is_bigger";
+        public static final String ARGS_IS_BIGGER = "args_is_bigger";
 
         private static final int NOT_SET = -1;
 
@@ -230,7 +231,7 @@ public class BubbleSortVisualizationFragment extends Fragment {
                             public void onGlobalLayout() {
                                 Log.i(TAG, "onGlobalLayout");
                                 bubbleSortGraph.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-                                bubbleSortGraph.generateXandYratio();
+                                bubbleSortGraph.generateXAndYRatio();
                                 handler.postDelayed(bubbleSortTask, 1000); // Time to view unsorted array before start sorting.
                             }
                         }

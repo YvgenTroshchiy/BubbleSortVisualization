@@ -2,13 +2,14 @@ package com.troshchiy.bubblesortvisualization.ui.main;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.EditText;
+
+import androidx.fragment.app.Fragment;
 
 import com.troshchiy.bubblesortvisualization.R;
 import com.troshchiy.bubblesortvisualization.ui.bubble_sort_visualization.BubbleSortVisualizationActivity;
@@ -30,8 +31,8 @@ public class MainFragment extends Fragment {
     private static final int MIN_ARRAY_LENGTH = 2;
     private static final int MAX_ARRAY_LENGTH = 200;
 
-    @Bind(R.id.edt_array_length)           EditText edt_array_length;
-    @Bind(R.id.edt_swap_duration)          EditText edt_swap_duration;
+    @Bind(R.id.edt_array_length) EditText edt_array_length;
+    @Bind(R.id.edt_swap_duration) EditText edt_swap_duration;
     @Bind(R.id.checkbox_isOneStepSwapDraw) CheckBox checkbox_isOneStepSwapDraw;
 
     @Override public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

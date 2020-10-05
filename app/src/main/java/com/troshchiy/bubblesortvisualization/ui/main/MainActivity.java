@@ -1,6 +1,7 @@
 package com.troshchiy.bubblesortvisualization.ui.main;
 
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.troshchiy.bubblesortvisualization.R;
