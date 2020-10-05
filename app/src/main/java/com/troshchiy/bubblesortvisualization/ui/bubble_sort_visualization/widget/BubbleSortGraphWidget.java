@@ -12,6 +12,7 @@ import com.troshchiy.bubblesortvisualization.R;
 import com.troshchiy.bubblesortvisualization.util.ArrayUtils;
 import com.troshchiy.bubblesortvisualization.util.UiUtils;
 
+//TODO: change to Drawable ?
 public class BubbleSortGraphWidget extends View {
 
     private final String TAG = BubbleSortGraphWidget.class.getSimpleName();
@@ -44,8 +45,8 @@ public class BubbleSortGraphWidget extends View {
 
     private boolean oneStepSwapDraw;
 
-    private int     currentSortIndex;
-    private int     lastIndex;
+    private int currentSortIndex;
+    private int lastIndex;
     private boolean drawBeforeSwap;
     private boolean isBigger;
 
@@ -71,7 +72,9 @@ public class BubbleSortGraphWidget extends View {
     private void init() {
         Log.i(TAG, "init");
 
-        if (isInEditMode()) {return;}
+        if (isInEditMode()) {
+            return;
+        }
 
         initStrokePaint();
         initUnsortedFillPaint();
@@ -127,7 +130,9 @@ public class BubbleSortGraphWidget extends View {
     }
 
     @Override protected void onDraw(Canvas canvas) {
-        if (array == null) { return; }
+        if (array == null) {
+            return;
+        }
 
         float left;
         float right;
@@ -173,21 +178,37 @@ public class BubbleSortGraphWidget extends View {
         }
     }
 
-    public void setArray(int[] array) { this.array = array; }
+    public void setArray(int[] array) {
+        this.array = array;
+    }
 
-    public void setOneStepSwapDraw(boolean oneStepSwapDraw) { this.oneStepSwapDraw = oneStepSwapDraw; }
+    public void setOneStepSwapDraw(boolean oneStepSwapDraw) {
+        this.oneStepSwapDraw = oneStepSwapDraw;
+    }
 
-    public void setCurrentSortIndex(int currentSortIndex) { this.currentSortIndex = currentSortIndex; }
+    public void setCurrentSortIndex(int currentSortIndex) {
+        this.currentSortIndex = currentSortIndex;
+    }
 
-    public void setLastIndex(int lastIndex) { this.lastIndex = lastIndex; }
+    public void setLastIndex(int lastIndex) {
+        this.lastIndex = lastIndex;
+    }
 
-    public void setDrawBeforeSwap(boolean drawBeforeSwap) { this.drawBeforeSwap = drawBeforeSwap; }
+    public void setDrawBeforeSwap(boolean drawBeforeSwap) {
+        this.drawBeforeSwap = drawBeforeSwap;
+    }
 
-    public void setIsBigger(boolean isBigger) { this.isBigger = isBigger; }
+    public void setIsBigger(boolean isBigger) {
+        this.isBigger = isBigger;
+    }
 
-    public void setState(STATE state) { this.state = state; }
+    public void setState(STATE state) {
+        this.state = state;
+    }
 
-    public STATE getState() { return state; }
+    public STATE getState() {
+        return state;
+    }
 
     //TODO: Rename or split
     public void generateXandYratio() {
